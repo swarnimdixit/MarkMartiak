@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_weeklyMarketUpdate"
+            android:title="Weekly Market Update" />
+        <item
+            android:id="@+id/nav_investing"
+            android:title="Investing" />
+        <item
+            android:id="@+id/nav_twoMinDrill"
+            android:title="Two Minutes Drill" />
+
+        <item
+            android:id="@+id/nav_inTheNews"
+            android:title="In the News" />
+        <item
+            android:id="@+id/nav_myApproach"
+            android:title="My Approach" />
+        <item
+            android:id="@+id/nav_aboutMark"
+            android:title="About Mark" />
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact" />
+        <!-- you can add icons here by declareing thi to items android:icon="@drawable/ic_menu_camera"-->
+    </group>
+
+
+
+</menu>

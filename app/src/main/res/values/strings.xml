@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MarkMartiak</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="string_array_heading">
+        <item>The Trump Era begins: Bulls, Bears and Pass on the Fish and Chips (Post BREXIT) for Bagels and Reality TV in D.C.</item>
+        <item>Globalization and The Trump Age - Pass the Fish and Chips, Now We are Talking Reality TV</item>
+        <item>Dearly Beloved, Prince Rogers Nelson - Enigma Throughout</item>
+    </string-array>
+
+    <string-array name="string_array_description" formatted="false">
+        <item>In the past eight years, pundits have suggested a bear market after a 10% correction but each time,
+            the market has bounced back to new highs. One example occurred In 2011, when the S and P 500 fell by 19.4% from April 29th to October 3rd.
+            I believe the Q/3/2015 correction was no different. Like many others on Wall Street,
+            I was surprised that the recent highs would be achieved on the heels of the Trump
+            election victory and be sustained leading up to the President Elect’s inauguration on January 20th, 2017.
+            There’s no real definition of a bear market, or a bull market, for that matter.
+            Most pundits use the rule-of-thumb that a bear market is a 20% drop from a prior peak.
+            However, in 1962 this happened in the midst of a long running rise in stock prices that went on until 1966.
+        </item>
+
+        <item>Early during the morning of June 24th,
+            news came that Britain voted to leave the European Union aka BREXIT a historic decision certain to reshape the nation’s place in the world,
+            disrupt the Continent and rock political establishments throughout the West.j
+            Welcome to the TRUMP AGE – the people voted with their raw emotions. The sterling pound dropped to a more than a thirty-year low. Sovereign independence cried-out.
+        </item>
+
+        <item>I first heard about the artist named Prince in the late 1970s I wondered to myself who is this cat – and where’s his funk, pop and androgynous sound coming from?
+            His music integrated a wide variety of styles, including funk, rock, RandB, soul, psychedelia, and pop.
+            Prince reminded me of the modern versions of James Brown, Little Richard, Sly and The Family Stone,
+            Carlos Santana and Eric Clapton all rolled-up into one cool multi-talented dude.
+        </item>
+
+    </string-array>
+    <string-array name="string_array_date">
+        <item>Wednesday, 01 March 2017 | MARK</item>
+        <item>Thursday, 29 April 2017 | MARK</item>
+        <item>Saturday, 11 April 2017</item>
+    </string-array>
+
+
+</resources>
