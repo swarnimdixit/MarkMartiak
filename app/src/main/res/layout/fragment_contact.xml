@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="115dp"
         android:orientation="vertical"
-        android:background="#68000000"
+        android:background="@color/common_google_signin_btn_text_light_disabled"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true">
     <ImageButton
