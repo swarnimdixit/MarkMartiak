@@ -2,6 +2,7 @@ package com.example.trigent.markmartiak;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.io.Serializable;
@@ -24,8 +26,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     Context context;
     private ArrayList<NewsModel> mDataset;
 
+
+
     public RecyclerViewAdapter(ArrayList<NewsModel> mDataset) {
+
         this.mDataset = mDataset;
+
     }
 
 
@@ -41,7 +47,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             mImage = (ImageView) mCard.findViewById(R.id.item_image);
             mHeading = (TextView) mCard.findViewById(R.id.item_heading);
             mDate = (TextView) mCard.findViewById(R.id.item_date);
-
         }
     }
 
@@ -65,6 +70,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.mHeading.setText(newsModel.getmHeading());
         holder.mDate.setText(newsModel.getmDate());
 
+
+
     holder.mCard.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -82,18 +89,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             fragmentTransaction.replace(R.id.main_activity_frame_layout,newsDescFragment).commit();
         }
     });
-
-
     }
-
-
-
     @Override
     public int getItemCount() {
 
 
         return mDataset.size();
     }
-
 
 }

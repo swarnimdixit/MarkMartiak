@@ -18,7 +18,7 @@
     <ImageButton
         android:id="@+id/news_desc_image"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/trump"
         android:scaleType="centerCrop"
         android:background="@color/common_google_signin_btn_text_dark_focused" />

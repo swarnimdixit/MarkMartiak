@@ -13,6 +13,8 @@
         <item>The Trump Era begins: Bulls, Bears and Pass on the Fish and Chips (Post BREXIT) for Bagels and Reality TV in D.C.</item>
         <item>Globalization and The Trump Age - Pass the Fish and Chips, Now We are Talking Reality TV</item>
         <item>Dearly Beloved, Prince Rogers Nelson - Enigma Throughout</item>
+        <item>Game Changer - Trump’s First 200 Days</item>
+        <item>David Bowie Downtown Denizen and Financial Innovator</item>
     </string-array>
 
     <string-array name="string_array_description" formatted="false">
@@ -37,12 +39,26 @@
             Prince reminded me of the modern versions of James Brown, Little Richard, Sly and The Family Stone,
             Carlos Santana and Eric Clapton all rolled-up into one cool multi-talented dude.
         </item>
+        <item>\“The stock market has reached record levels since Trump\'s election in anticipation of pro-growth policies\”
+            Trump delivered his address to a joint session of Congress on March 2nd after the markets close.
+            The U.S. President appeared to be composed and \“presidential\” when he asked Congress to approve a $1 trillion investmen
+        </item>
+        <item>
+            My first Bowie exposure was to Hunky Dory and evolved into listening to Ziggy Stardust and the Spiders from Mars while adjusting to
+            a new home in a suburban New Jersey town. Assimilating into my new high school, I felt that I had to establish my own identity as a
+            person. I found that persona in David Bowie. He made it cool to feel creative and express a hip fashion sense in suburbia.
+            In the mid-1970s, one could be categorized as either a \‘Nerd,\’ a \‘Jock\’ or a ‘Head’.
+            I wanted to blend the latter two, co-existing among the students, athletes and partiers.
+            It was the Bowie connection that gave me my edge.
+        </item>
 
     </string-array>
     <string-array name="string_array_date">
         <item>Wednesday, 01 March 2017 | MARK</item>
         <item>Thursday, 29 April 2017 | MARK</item>
         <item>Saturday, 11 April 2017</item>
+        <item>Tuesday, March 28, 2017</item>
+        <item>Friday, February 26, 2016</item>
     </string-array>
 
 

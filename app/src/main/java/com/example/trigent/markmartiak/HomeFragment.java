@@ -7,9 +7,13 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 
@@ -18,7 +22,8 @@ public class HomeFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    int[] newsImageArray = {R.drawable.trump,R.drawable.globalization,R.drawable.princerogernelson};
+    int[] newsImageArray = {R.drawable.trump,R.drawable.globalization,R.drawable.princerogernelson,R.drawable.trump2,R.drawable.davidbowie};
+
 
     public String[] newsHeadingArray;
     public String[] newsDescArray;
@@ -31,15 +36,16 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        inflater.inflate(R.layout.fragment_home, container, false);
+       View view = inflater.inflate(R.layout.fragment_home, container, false);
         viewGroup=container;
+
 
         Resources res = getResources();
        newsHeadingArray =res.getStringArray(R.array.string_array_heading);
        newsDescArray = res.getStringArray(R.array.string_array_description);
        newsDateArray = res.getStringArray(R.array.string_array_date);
 
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return view;
     }
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -63,7 +69,12 @@ public class HomeFragment extends Fragment {
         mAdapter = new RecyclerViewAdapter(arrayListModel);
         mRecyclerView.setAdapter(mAdapter);
 
+
+
+
     }
     public interface OnFragmentInteractionListener {
     }
+
+
 }

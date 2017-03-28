@@ -1,6 +1,7 @@
 package com.example.trigent.markmartiak;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
@@ -21,7 +23,7 @@ public class NewsDescFragment extends Fragment {
     TextView newsDescFragHeading,newsDescFragDate,newsDescFragDescription;
     ImageView newDescFragImage;
     int[] newsImageArray =
-            {R.drawable.trump,R.drawable.globalization,R.drawable.princerogernelson};
+            {R.drawable.trump,R.drawable.globalization,R.drawable.princerogernelson,R.drawable.trump2,R.drawable.davidbowie};
 
 
     public NewsDescFragment() {
@@ -48,6 +50,13 @@ public class NewsDescFragment extends Fragment {
             newDescFragImage.setImageResource(newsImageArray[position]);
 
         }
+
+
+        int screenWidth = getScreenWidth();
+        int screenHeight = screenWidth*9/16;
+        LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(screenWidth,screenHeight);
+        newDescFragImage.setLayoutParams(parms);
+
         return view;
     }
 
@@ -89,6 +98,10 @@ public class NewsDescFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public static int getScreenWidth() {
+        return Resources.getSystem().getDisplayMetrics().widthPixels;
     }
 }
 
