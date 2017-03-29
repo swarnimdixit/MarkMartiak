@@ -30,7 +30,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/trump"
             android:layout_centerHorizontal="true"
-            android:layout_height="230dp">
+            android:layout_height="wrap_content">
         </ImageView>
         <TextView android:id="@+id/item_date"
             android:layout_width="match_parent"

@@ -53,9 +53,10 @@ public class NewsDescFragment extends Fragment {
 
 
         int screenWidth = getScreenWidth();
-        int screenHeight = screenWidth*9/16;
-        LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(screenWidth,screenHeight);
+        LinearLayout.LayoutParams parms = (LinearLayout.LayoutParams) newDescFragImage.getLayoutParams();
+        parms.height = screenWidth*9/16;
         newDescFragImage.setLayoutParams(parms);
+        newDescFragImage.invalidate();
 
         return view;
     }

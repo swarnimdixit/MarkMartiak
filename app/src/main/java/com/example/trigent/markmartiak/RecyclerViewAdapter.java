@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.io.Serializable;
@@ -24,6 +25,7 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     Context context;
+
     private ArrayList<NewsModel> mDataset;
 
 
@@ -47,6 +49,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             mImage = (ImageView) mCard.findViewById(R.id.item_image);
             mHeading = (TextView) mCard.findViewById(R.id.item_heading);
             mDate = (TextView) mCard.findViewById(R.id.item_date);
+
+            int screenWidth = getScreenWidth();
+            RelativeLayout.LayoutParams parms = (RelativeLayout.LayoutParams) mImage.getLayoutParams();
+            parms.height = screenWidth*9/16;
+            mImage.setLayoutParams(parms);
+            mImage.invalidate();
         }
     }
 
@@ -95,6 +103,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 
         return mDataset.size();
+    }
+    public static int getScreenWidth() {
+        return Resources.getSystem().getDisplayMetrics().widthPixels;
     }
 
 }
