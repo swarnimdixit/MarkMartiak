@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        HomeFragment homeFragment = new HomeFragment();
+        AboutMark aboutMark = new AboutMark();
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.main_activity_frame_layout, homeFragment).commit();
+        ft.replace(R.id.main_activity_frame_layout, aboutMark).commit();
 
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -82,7 +82,6 @@ public class MainActivity extends AppCompatActivity
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.main_activity_frame_layout, homeFragment).commit();
-
         } else if (id == R.id.nav_weeklyMarketUpdate) {
 
         } else if (id == R.id.nav_investing) {
@@ -94,7 +93,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_myApproach) {
 
         } else if (id == R.id.nav_aboutMark) {
-
+            AboutMark aboutMark = new AboutMark();
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.main_activity_frame_layout, aboutMark).commit();
         } else if (id == R.id.nav_contact) {
             ContactFragment contactFragment = new ContactFragment();
             FragmentManager fm = getSupportFragmentManager();

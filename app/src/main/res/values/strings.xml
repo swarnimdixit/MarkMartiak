@@ -3,6 +3,11 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about_mark_description">Mark\'s 30-year career spans financial services, media and retail.
+        At Premier Wealth Management, he serves individuals and institutional clients, with special focus on the financial planning
+        issues related to family offices, divorce, retirement, trust and estate planning. Mark can be seen as a regular guest on CNBC
+        and FOX BUSINESS NEWS, and is often quoted in The Wall Street Journal.
+</string>
 
     <string name="action_settings">Settings</string>
 

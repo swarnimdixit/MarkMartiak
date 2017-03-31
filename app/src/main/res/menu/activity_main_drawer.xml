@@ -3,6 +3,9 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_aboutMark"
+            android:title="About Mark" />
+        <item
             android:id="@+id/nav_home"
             android:title="Home" />
         <item
@@ -21,13 +24,11 @@
         <item
             android:id="@+id/nav_myApproach"
             android:title="My Approach" />
-        <item
-            android:id="@+id/nav_aboutMark"
-            android:title="About Mark" />
+
         <item
             android:id="@+id/nav_contact"
             android:title="Contact" />
-        <!-- you can add icons here by declareing thi to items android:icon="@drawable/ic_menu_camera"-->
+        <!-- you can add icons here by declaring thi to items android:icon="@drawable/ic_menu_camera"-->
     </group>
 
 

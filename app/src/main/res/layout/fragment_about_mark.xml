@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.trigent.markmartiak.NewsDescFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_focused">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/about_mark_image"
+                android:layout_width="match_parent"
+                android:layout_height="377dp"
+                app:srcCompat="@drawable/markmartiak"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/about_mark_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mark M. Martiak"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:textStyle="normal|bold"
+                android:typeface="serif"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/about_mark_heading2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#b8b8b8"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:typeface="monospace"
+                android:textAlignment="center"
+                android:text="Senior Wealth Strategist \n mmartiak@pfawealth.com"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/about_mark_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cardview_light_background"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:typeface="sans"
+                android:text="@string/about_mark_description"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</FrameLayout>
+
